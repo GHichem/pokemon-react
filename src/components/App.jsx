@@ -205,8 +205,9 @@ function App() {
                 onToggleShiny={handleToggleShiny}
               />
             ))}
-            {tables[selectedTeamIndex][0].length < 6 && (
+            {Array.from({ length: 6 - tables[selectedTeamIndex][0].length }).map((_, index) => (
               <Pokemons
+                key={`default-${index}`}
                 name="Unknown"
                 image1="/unknown/unknown.png"
                 shiny_img="/unknown/unknown.png"
@@ -216,7 +217,7 @@ function App() {
                 onClick={() => {}}
                 onToggleShiny={() => {}}
               />
-            )}
+            ))}
           </div>
           <div>
             <PokemonSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
