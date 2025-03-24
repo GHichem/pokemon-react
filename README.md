@@ -39,48 +39,41 @@ Start the backend service on port `3001`:
 node db.js
 ```
 
-### 5. Navigate to the Project Root Directory  
+### 5. Navigate Back to the Project Root and Install Dependencies
 Move back to the main project folder:
 
 ```sh
 cd 'c:/path/to/your/project/pokemon-react'
-```
-
-### 6. Install Dependencies  
-Run the following command to install all necessary packages:
-
-```sh
 npm i
 ```
 
-### 7. Start the Application  
+### 6. Start the Application  
 Run the React app locally:
 
 ```sh
 npm start
 ```
 
-### 8. Screenshot  
+### 7. Screenshot  
 
-First time opening the page looks like this, with just a plus button:
-![image](https://github.com/user-attachments/assets/95073d85-4421-4bd0-86ad-987307d35019)
+Upon opening the application for the first time, you’ll be prompted to choose the generation team you want to create:
+![image](https://github.com/user-attachments/assets/90436c82-e279-405c-ab0b-fbfd684246c0)
 
-When clicked, you get the option to select from one of these different generations to create your team, or you can click on the top left button to go back to the first page:
-![image](https://github.com/user-attachments/assets/aafee462-239d-43dc-a86d-668b055dc1ca)
+After selecting a generation, such as Gen 1, you will see an empty team. Below that, a list of Pokémon from the chosen generation will appear. You can search for specific Pokémon and add them to your team by clicking on them.
 
-If you clicked on Gen 1, for example, you will see this an empty team. Under it, you see a list of Pokémon from Gen 1. You can use the search bar to filter and just click on a Pokémon you want to add.
-Example for an empty team:
+Example of an empty team:
 ![image](https://github.com/user-attachments/assets/2605bcd9-4a53-4123-be30-d24c4a68517d)
 
-You can click on the star to switch to a shiny Pokémon. You can also click on the Pokémon image in your team to remove it from the team:
+You can toggle the shiny variant of a Pokémon by clicking the star icon. Additionally, click on the Pokémon image in your team to remove it.
 ![image](https://github.com/user-attachments/assets/2f079080-e3b6-445f-ab89-be5db817bb7a)
 
-If you click on the top left button, you return to the first page, and it shows all the teams you created. You can click on the trash icon to remove a team.
-For example, here is a team with Gen 1 and a team with Gen 2 (you can make two teams from the same generation):
+At the top left of the page, there’s a button that takes you to the team overview page. From here, you can view all the teams you've created and delete teams by clicking the trash icon.
+
+Example of teams created from Gen 1 and Gen 2:
 ![image](https://github.com/user-attachments/assets/a2f2512b-3b29-4f40-a2f0-519902fd7e0d)
 
-If you click on a team, it takes you back where you can edit it (remove/add Pokémon).
+Click on a team to edit it, allowing you to add or remove Pokémon. You can also click the "+" button to return to the generation selection page.
 
-Lastly, your database should look like this with the updated info:
+Lastly, your database will reflect the updated information, as shown below:
 ![image](https://github.com/user-attachments/assets/2e3d7aa5-6469-48aa-bd4a-9876e2e36795)
 ![image](https://github.com/user-attachments/assets/56652888-0053-46f8-8894-f2c2c150dfc4)
