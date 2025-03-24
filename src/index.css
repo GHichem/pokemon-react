@@ -144,8 +144,16 @@ span, .icon-button, .delete-button {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Align items to the start of the cross axis */
   background-color: var(--background);
+  position: relative; /* Ensure the container is positioned relatively */
+  padding: 10px; /* Add padding to ensure the button is not flush with the edge */
+}
+
+.gen-container .icon-button {
+  align-self: flex-start; /* Align the button to the start of the cross axis */
+  margin-top: 10px; /* Add margin to adjust the top position */
+  margin-left: 10px; /* Add margin to adjust the left position */
 }
 
 .gen-cards {

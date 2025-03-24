@@ -21,6 +21,9 @@ function App() {
         const response = await axios.get("http://localhost:3001/existing-tables");
         const existingTables = response.data;
         setTables(existingTables);
+        if (existingTables.length === 0) {
+          setShowGenerations(true);
+        }
       } catch (error) {
         console.error("Error fetching existing tables:", error);
       }
